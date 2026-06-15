@@ -3,6 +3,7 @@
 A command-line tool to read, filter, and analyse CSV data using Python.
 
 ## Features
+
 - Reads any CSV file from the terminal
 - Filters rows based on a minimum value for any numeric column
 - Computes stats — average, highest, lowest, total, pass count
@@ -10,12 +11,15 @@ A command-line tool to read, filter, and analyse CSV data using Python.
 - Handles all edge cases — missing file, wrong column, empty results
 
 ## Project Structure
+
+```
 cli-data-parser/
 ├── data/
 │   └── students.csv
 ├── parser.py
 ├── requirements.txt
 └── README.md
+```
 
 ## Setup
 
@@ -48,6 +52,7 @@ python parser.py data/students.csv --min 80 --output data/toppers.csv
 
 ## Sample Output
 
+```
 Loaded 7 rows
 =====Stats=====
 Average: 69.86
@@ -58,6 +63,7 @@ Passed Count: 4
 ===============
 Filtering the rows where marks >= 60...
 Saved 4 rows to data/output.csv
+```
 
 ## Arguments
 
